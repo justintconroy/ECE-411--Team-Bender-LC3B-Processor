@@ -1,3 +1,10 @@
+Steve -- October 18, 16:30 - 21:00
+ Started to plan out the initial pipeline configuration with Justin
+and Harold. Environment and initial spec decisions were also made.
+Various descisions were made on the pipeline such as
+where each component will be layed out along with the decision
+to make it hierarchical.
+
 Justin -- October 18, 20:30 - 24:00
  Layed down initial components/framework for pipeline design. The design
  will be very hierarchical to facilitate more than one person working
@@ -7,3 +14,4 @@ Justin -- October 18, 20:30 - 24:00
  I've also spent some of this time trying to set up a git repository on
  github in the hopes that it will be useful. I need to check to make sure
  my teammates are comfortable with using git.
+
