@@ -1,0 +1,449 @@
+DESIGN @write@combiner
+VIEW interface
+NO_GRAPHIC 0
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 50,0 8 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 51,0 17 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 56,0 18 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 61,0 19 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 66,0 20 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 71,0 21 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 81,0 22 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 76,0 23 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 1,0 26 0 
+DESIGN @write@combiner
+VIEW interface
+GRAPHIC 1,0 27 0 
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 30
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 154,0 39 0 
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 45
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 0,0 48 2 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 763,0 53 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 795,0 54 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 827,0 55 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 859,0 56 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 891,0 57 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 923,0 58 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 955,0 59 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1126,0 60 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1134,0 61 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1142,0 62 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1150,0 63 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1158,0 64 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1166,0 65 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1174,0 66 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1182,0 67 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 429,0 68 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 469,0 69 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 733,0 70 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 727,0 71 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 721,0 72 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 715,0 73 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 709,0 74 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 703,0 75 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1074,0 76 0 
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 77
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 78
+LIBRARY ece411
+DESIGN @decode8
+VIEW untitled
+GRAPHIC 971,0 80 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 15,0 82 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 102,0 83 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 996,0 84 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1006,0 85 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1016,0 86 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1026,0 87 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1036,0 88 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1046,0 89 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1056,0 90 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1066,0 91 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1184,0 94 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1209,0 96 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1219,0 97 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1229,0 98 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1239,0 99 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1249,0 100 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1259,0 101 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1269,0 102 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1279,0 103 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 102,0 104 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 85,0 105 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 419,0 108 0 
+DESIGN @w@t
+VIEW symbol.sb
+GRAPHIC 93,0 110 0 
+DESIGN @w@t
+VIEW symbol.sb
+GRAPHIC 108,0 111 0 
+DESIGN @w@t
+VIEW symbol.sb
+GRAPHIC 113,0 112 0 
+DESIGN @w@t
+VIEW symbol.sb
+GRAPHIC 103,0 113 0 
+DESIGN @w@t
+VIEW symbol.sb
+GRAPHIC 98,0 114 0 
+DESIGN @w@t
+VIEW symbol.sb
+GRAPHIC 137,0 115 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 385,0 118 0 
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 130
+LIBRARY ece411
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 132
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 971,0 135 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1184,0 136 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 419,0 137 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 385,0 138 0 
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 141
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 143
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 971,0 145 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1184,0 158 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 419,0 171 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 431,0 173 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 885,0 174 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 877,0 175 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 893,0 176 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 901,0 177 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1128,0 178 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 435,0 180 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 471,0 182 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 917,0 183 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 909,0 184 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 925,0 185 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 933,0 186 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1136,0 187 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 475,0 189 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 735,0 191 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 949,0 192 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 941,0 193 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 957,0 194 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 965,0 195 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1144,0 196 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 509,0 198 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 729,0 200 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 853,0 201 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 845,0 202 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 861,0 203 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 869,0 204 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1152,0 205 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 543,0 207 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 723,0 209 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 821,0 210 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 813,0 211 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 829,0 212 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 837,0 213 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1160,0 214 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 577,0 216 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 717,0 218 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 789,0 219 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 781,0 220 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 797,0 221 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 805,0 222 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1168,0 223 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 611,0 225 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 711,0 227 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 757,0 228 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 749,0 229 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 765,0 230 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 773,0 231 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1176,0 232 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 645,0 234 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 705,0 236 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 689,0 237 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 681,0 238 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 697,0 239 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 741,0 240 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1120,0 241 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 385,0 243 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 1471,0 245 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 71,0 246 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 431,0 247 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 471,0 248 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 735,0 249 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 729,0 250 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 723,0 251 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 717,0 252 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 711,0 253 0 
+DESIGN @write@combiner
+VIEW struct.bd
+GRAPHIC 705,0 254 0 
+DESIGN @write@combiner
+VIEW struct.bd
+NO_GRAPHIC 257
