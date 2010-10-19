@@ -1,0 +1,9 @@
+Justin -- October 18, 20:30 - 24:00
+ Layed down initial components/framework for pipeline design. The design
+ will be very hierarchical to facilitate more than one person working
+ on different parts of the processor at the same time. To this end, I've
+ made (and color-coded) more different components for each stage of the
+ pipeline.
+ I've also spent some of this time trying to set up a git repository on
+ github in the hopes that it will be useful. I need to check to make sure
+ my teammates are comfortable with using git.
