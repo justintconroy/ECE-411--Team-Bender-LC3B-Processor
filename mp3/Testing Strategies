@@ -1,0 +1,8 @@
+*****Testing Strategies*****
+Initially, my testing strategy consisted of testing each instruction after designing its logic in the Datapath and its control structure in the Control Unit.  I wrote a small assembly program verify that each instruction was working as intended.  Each time after adding an additional instruction, I went back and tested that the previous instructions' logic remained unharmed. 
+
+My main testing program was a modified version of my MP1 Factorial program.  I also frequently used my MP1 Factorial program to verify that I hadn't damaged my previously working design.
+
+In order to test LDI, STI, LDB, STB, and TRAP, I mainly relied on the given test code provided in the MP2.1 document.  
+
+After completing my design, I created a new program designed to rigorously test many of the instructions I worked on early in the design such at LEA, Jump, JSR, and ADD/AND Immi.  After finding no errors in my processor while running that program, I went on to trace through the given code provided on the course website.  

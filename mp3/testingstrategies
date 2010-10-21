@@ -1,0 +1,8 @@
+Harold Woods
+***********Testing Strategies*********
+
+To begin with testing, I started by testing a few load instructions to verify that my MP2.2read design had not been damaged in the modification process.  After this, I continued by testing simple things like a store to a memory location that was already inside of my cache. 
+
+After convincing myself that my basic cache stores were working properly, I moved on to test that my store byte instruction was working correctly.  After confirming this, I tested that my eviction policy was in full effect.  To do this, I wrote to a line in my cache and then loaded a line that I knew would evict it, forcing the cache to write the line back into main memory.  This was probably the most challenging thing for me.  
+
+After convincing myself that the evict policy was working, I began more general test that included cache misses, hits, and evictions mixed together.  Once I my processor passed those test, I began testing my design against the code given by the TAs and comparing my results with others.
