@@ -95,7 +95,7 @@ o 3
 suid 3,0
 )
 )
-uid 144,0
+uid 132,0
 )
 ]
 )
@@ -163,7 +163,7 @@ uid 95,0
 litem &16
 pos 2
 dimension 20
-uid 143,0
+uid 131,0
 )
 ]
 )
@@ -241,23 +241,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp2/hdl"
+value "/home/engr/hwoods2/ece411/ece411_given/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp2/hds"
+value "/home/engr/hwoods2/ece411/ece411_given/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp2/hds/mp2_@c@p@u/symbol.sb.info"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/mp1_@c@p@u/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp2/hds/mp2_@c@p@u/symbol.sb.user"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/mp1_@c@p@u/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp2/hds"
+value "/home/engr/hwoods2/ece411/ece411_given/hds"
 )
 (vvPair
 variable "appl"
@@ -273,15 +273,15 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp2/hds/mp2_@c@p@u"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/mp1_@c@p@u"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp2/hds/mp2_CPU"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/mp1_CPU"
 )
 (vvPair
 variable "date"
-value "09/17/10"
+value "08/27/10"
 )
 (vvPair
 variable "day"
@@ -293,11 +293,11 @@ value "Friday"
 )
 (vvPair
 variable "dd"
-value "17"
+value "27"
 )
 (vvPair
 variable "entity_name"
-value "mp2_CPU"
+value "mp1_CPU"
 )
 (vvPair
 variable "ext"
@@ -321,7 +321,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx31.ews.illinois.edu"
+value "eelnx28.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -337,27 +337,27 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "09"
+value "08"
 )
 (vvPair
 variable "module_name"
-value "mp2_CPU"
+value "mp1_CPU"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Aug"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "August"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp2/hds/mp2_@c@p@u/symbol.sb"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/mp1_@c@p@u/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp2/hds/mp2_CPU/symbol.sb"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/mp1_CPU/symbol.sb"
 )
 (vvPair
 variable "project_name"
@@ -397,15 +397,15 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "18:18:00"
+value "19:44:23"
 )
 (vvPair
 variable "unit"
-value "mp2_CPU"
+value "mp1_CPU"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -520,10 +520,10 @@ suid 2,0
 )
 )
 *36 (CptPort
-uid 145,0
+uid 133,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 146,0
+uid 134,0
 ro 90
 va (VaSet
 vasetType 1
@@ -532,11 +532,11 @@ fg "0,65535,0"
 xt "14250,8625,15000,9375"
 )
 tg (CPTG
-uid 147,0
+uid 135,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 148,0
+uid 136,0
 va (VaSet
 font "courier,8,0"
 )
@@ -547,7 +547,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 149,0
+uid 137,0
 va (VaSet
 font "courier,8,0"
 )
@@ -593,7 +593,7 @@ va (VaSet
 font "courier,8,1"
 )
 xt "24750,16000,28250,16900"
-st "mp2_CPU"
+st "mp1_CPU"
 blo "24750,16700"
 )
 )
@@ -646,7 +646,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -1245,6 +1245,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 497,0
+lastUid 173,0
 okToSyncOnLoad 1
 )

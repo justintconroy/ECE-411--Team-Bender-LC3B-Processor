@@ -1,0 +1,56 @@
+--
+-- VHDL Architecture ece411.oWordMux8.untitled
+--
+-- Created:
+--          by - hwoods2.stdt (eelnx33.ews.illinois.edu)
+--          at - 19:11:30 09/27/10
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY oWordMux8 IS
+  PORT( 
+      A   : IN     LC3b_oword;
+      Sel : IN     LC3b_8mux_sel;
+      F   : OUT    LC3b_word
+  );
+-- Declarations
+
+END oWordMux8 ;
+
+--
+ARCHITECTURE untitled OF oWordMux8 IS
+BEGIN
+  Process (A, Sel)
+    variable state : LC3b_word;
+  BEGIN
+    case Sel is 
+     when "000" =>
+      state := A(15 DOWNTO 0);
+     when "001" =>
+      state := A(31 DOWNTO 16);
+     when "010" =>
+      state := A(47 DOWNTO 32);
+     when "011" =>
+      state := A(63 DOWNTO 48);
+     when "100" =>
+      state := A(79 DOWNTO 64);
+     when "101" =>
+      state := A(95 DOWNTO 80);
+     when "110" =>
+      state := A(111 DOWNTO 96);
+     when "111" =>
+      state := A(127 DOWNTO 112);  
+     when others =>
+      state := (OTHERS => 'X');
+    end case;
+    F <= state after 3ns;
+  END PROCESS;
+END ARCHITECTURE untitled;
+

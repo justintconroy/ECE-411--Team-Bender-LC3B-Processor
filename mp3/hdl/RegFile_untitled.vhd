@@ -2,8 +2,8 @@
 -- VHDL Architecture ece411.RegFile.untitled
 --
 -- Created:
---          by - jconroy2.stdt (eelnx21.ews.illinois.edu)
---          at - 20:58:57 09/02/10
+--          by - hwoods2.stdt (eelnx18.ews.illinois.edu)
+--          at - 14:56:31 08/29/10
 --
 -- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
 --
@@ -13,12 +13,11 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
---USE ieee.std_logic_arith.all;
 
 ENTITY RegFile IS
    PORT( 
       RESET_L     : IN     std_logic;
-      RFMuxout    : IN     LC3b_word;
+      RFClrMuxout : IN     LC3b_word;
       RegWrite    : IN     std_logic;
       SrcB        : IN     LC3b_reg;
       StoreMuxout : IN     LC3b_reg;
@@ -33,7 +32,7 @@ ENTITY RegFile IS
 END RegFile ;
 
 --
-ARCHITECTURE untitled OF RegFile IS
+ARCHITECTURE UNTITLED OF REGFILE IS
 TYPE RAMMEMORY IS ARRAY (7 DOWNTO 0) OF LC3B_WORD;
 SIGNAL RAM : RAMMEMORY;
 BEGIN
@@ -50,7 +49,7 @@ BEGIN
 		RFBOUT <= RAM(RADDR2) AFTER DELAY_REGFILE_READ;
 	END PROCESS VHDL_REGFILE_READ;
 	-------------------------------------------------------------------
-	VHDL_REGFILE_WRITE: PROCESS(CLK, RFMUXOUT, REGWRITE, DEST, RESET_L)
+	VHDL_REGFILE_WRITE: PROCESS(CLK, RFClrMuxout, REGWRITE, DEST, RESET_L)
 	-------------------------------------------------------------------
 	VARIABLE WADDR : INTEGER RANGE 0 TO 7;
 	BEGIN
@@ -69,9 +68,8 @@ BEGIN
 		WADDR := TO_INTEGER(UNSIGNED('0' & DEST));
 		IF (CLK'EVENT AND (CLK = '1') AND (CLK'LAST_VALUE = '0')) THEN
 			IF (REGWRITE = '1') THEN
-				RAM(WADDR) <= RFMUXOUT;
+				RAM(WADDR) <= RFClrMuxout;
 			END IF;
 		END IF;
 	END PROCESS VHDL_REGFILE_WRITE;
-END ARCHITECTURE untitled;
-
+END UNTITLED;

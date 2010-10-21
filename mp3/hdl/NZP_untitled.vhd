@@ -2,8 +2,8 @@
 -- VHDL Architecture ece411.NZP.untitled
 --
 -- Created:
---          by - jconroy2.stdt (eelnx21.ews.illinois.edu)
---          at - 21:06:10 09/02/10
+--          by - hwoods2.stdt (eelnx18.ews.illinois.edu)
+--          at - 14:49:56 08/29/10
 --
 -- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
 --
@@ -13,7 +13,6 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;
 
 ENTITY NZP IS
    PORT( 
@@ -30,7 +29,7 @@ ENTITY NZP IS
 END NZP ;
 
 --
-ARCHITECTURE untitled OF NZP IS
+ARCHITECTURE UNTITLED OF NZP IS
 SIGNAL PRE_NZP : STD_LOGIC_VECTOR (2 DOWNTO 0);
 BEGIN
 	------------------------------
@@ -46,5 +45,5 @@ BEGIN
 	N <= PRE_NZP(2) AFTER DELAY_REG;
 	Z <= PRE_NZP(1) AFTER DELAY_REG;
 	P <= PRE_NZP(0) AFTER DELAY_REG;
-END ARCHITECTURE untitled;
+END UNTITLED;
 

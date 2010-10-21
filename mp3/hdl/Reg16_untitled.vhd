@@ -2,25 +2,25 @@
 -- VHDL Architecture ece411.Reg16.untitled
 --
 -- Created:
---          by - jconroy2.stdt (eelnx20.ews.illinois.edu)
---          at - 16:39:17 09/01/10
+--          by - hwoods2.stdt (eelnx18.ews.illinois.edu)
+--          at - 14:10:00 08/28/10
 --
 -- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
 --
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
+USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
 
 ENTITY Reg16 IS
    PORT( 
-      Input  : IN     lc3b_word;
+      Input  : IN     LC3b_word;
       RESET  : IN     std_logic;
       clk    : IN     std_logic;
       load   : IN     std_logic;
-      Output : OUT    lc3b_word
+      Output : OUT    LC3b_word
    );
 
 -- Declarations
@@ -28,20 +28,19 @@ ENTITY Reg16 IS
 END Reg16 ;
 
 --
-ARCHITECTURE untitled OF Reg16 IS
-  signal pre_out : LC3b_word;
+ARCHITECTURE UNTITLED OF REG16 IS
+SIGNAL PRE_OUT : LC3B_WORD;
 BEGIN
-  PROCESS (clk, RESET, Input)
-  BEGIN
-    if RESET = '0' then
-      pre_out <= (others => '0');
-    elsif clk'event and clk = '1' then
-      if (load = '1') then
-        pre_out <= Input;
-      end if;
-    end if;
-  end process;
-  
-  Output <= pre_out after delay_reg;
-END ARCHITECTURE untitled;
+PROCESS (CLK, RESET, INPUT)
+BEGIN
+	IF RESET = '0' THEN
+		PRE_OUT <= (OTHERS => '0');
+	ELSIF CLK'EVENT AND CLK = '1' THEN
+		IF (LOAD = '1') THEN
+			PRE_OUT <= INPUT;
+		END IF;
+	END IF;
+END PROCESS;
+OUTPUT <= PRE_OUT AFTER DELAY_REG;
+END UNTITLED;
 

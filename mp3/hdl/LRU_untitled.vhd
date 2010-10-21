@@ -2,14 +2,13 @@
 -- VHDL Architecture ece411.LRU.untitled
 --
 -- Created:
---          by - jconroy2.stdt (linux1.ews.illinois.edu)
---          at - 21:31:24 09/30/10
+--          by - hwoods2.stdt (eelnx26.ews.illinois.edu)
+--          at - 22:53:23 09/28/10
 --
 -- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
 --
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
---USE ieee.std_logic_arith.all;
 USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
@@ -17,12 +16,11 @@ USE ece411.LC3b_types.all;
 
 ENTITY LRU IS
    PORT( 
-      ADDRindex  : IN     LC3B_cacheindex;
-      RESET_L    : IN     std_logic;
-      LRUWrite   : IN     std_logic;
-      LRU_DATAIN : IN     std_logic;
-      clk        : IN     std_logic;
-      LRUout     : OUT    std_logic
+      RESET_L : IN     std_logic;
+      Index   : IN     LC3b_index;
+      LRUout  : OUT    std_logic;
+      Hit     : IN     std_logic;
+      prehit1 : IN     std_logic
    );
 
 -- Declarations
@@ -31,44 +29,30 @@ END LRU ;
 
 --
 ARCHITECTURE untitled OF LRU IS
-
-	TYPE LRUArray IS array (7 downto 0) of std_logic;
-	SIGNAL LRUsig : LRUArray;
+TYPE LRUArray IS array (7 downto 0) of std_logic;
+SIGNAL LRUdata  : LRUArray;
 
 BEGIN
-		--------------------------------------------------------------
-		ReadFromLRUArray : PROCESS (LRUsig, ADDRindex)
-		--------------------------------------------------------------
-    
-			VARIABLE LRUindex : integer;
-			BEGIN
-				LRUindex := to_integer(unsigned(ADDRindex));
-				LRUout <= LRUsig(LRUindex) after 20 ns;
-		
-		END PROCESS ReadFromLRUArray;
-	
-		--------------------------------------------------------------
-		WriteToLRUArray : PROCESS (RESET_L, ADDRindex, LRUWrite, LRU_DATAIN)
-		-------------------------------------------------------	------	
-			VARIABLE LRUindex : integer;
-			BEGIN
-				LRUindex := to_integer(unsigned(ADDRIndex));
-			IF RESET_L = '0' THEN
-				LRUsig(0) <= '0';
-				LRUsig(1) <= '0';
-				LRUsig(2) <= '0';
-				LRUsig(3) <= '0';
-				LRUsig(4) <= '0';
-				LRUsig(5) <= '0';
-				LRUsig(6) <= '0';
-				LRUsig(7) <= '0';
-			END IF;
-
-			IF (LRUWrite = '1') THEN
-				LRUsig(LRUindex) <= LRU_DATAIN;
-			END IF;
-		
-		END PROCESS WriteToLRUArray;
-
+--------------------------------------------------------------
+LRUProc: PROCESS (RESET_L, Index, prehit1, Hit, LRUdata)
+-------------------------------------------------------	------	
+  VARIABLE DataIndex : integer;
+  BEGIN
+    DataIndex := to_integer(unsigned(Index));
+    IF RESET_L = '0' THEN
+       LRUdata(0)  <= '0'; 
+       LRUdata(1)  <= '0';
+       LRUdata(2)  <= '0';
+       LRUdata(3)  <= '0';
+       LRUdata(4)  <= '0';
+       LRUdata(5)  <= '0';
+       LRUdata(6)  <= '0';
+       LRUdata(7)  <= '0';
+    END IF;
+    if Hit = '1' THEN
+       LRUdata(DataIndex) <= prehit1;  
+    END IF;
+     LRUout <= LRUdata(DataIndex) after 20ns;
+  END PROCESS LRUProc;  
 END ARCHITECTURE untitled;
 

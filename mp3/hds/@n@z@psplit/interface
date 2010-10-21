@@ -14,10 +14,6 @@ unitName "NUMERIC_STD"
 library "ece411"
 unitName "LC3b_types"
 )
-(DmPackageRef
-library "ieee"
-unitName "std_logic_arith"
-)
 ]
 libraryRefs [
 "ieee"
@@ -29,7 +25,7 @@ appVersion "2005.3 (Build 75)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 5,0
+suid 10,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -74,11 +70,11 @@ m 1
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 18
-suid 1,0
+o 23
+suid 6,0
 )
 )
-uid 76,0
+uid 153,0
 )
 *15 (LogPort
 port (LogicalPort
@@ -86,11 +82,11 @@ m 1
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 19
-suid 2,0
+o 24
+suid 7,0
 )
 )
-uid 78,0
+uid 155,0
 )
 *16 (LogPort
 port (LogicalPort
@@ -98,33 +94,33 @@ m 1
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 20
-suid 3,0
+o 25
+suid 8,0
 )
 )
-uid 80,0
+uid 157,0
 )
 *17 (LogPort
 port (LogicalPort
 decl (Decl
-n "dest"
+n "destin"
 t "LC3b_reg"
-o 44
-suid 4,0
+o 60
+suid 9,0
 )
 )
-uid 82,0
+uid 159,0
 )
 *18 (LogPort
 port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 16
-suid 5,0
+o 21
+suid 10,0
 )
 )
-uid 84,0
+uid 161,0
 )
 ]
 )
@@ -180,31 +176,31 @@ uid 106,0
 litem &14
 pos 0
 dimension 20
-uid 77,0
+uid 154,0
 )
 *25 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 79,0
+uid 156,0
 )
 *26 (MRCItem
 litem &16
 pos 2
 dimension 20
-uid 81,0
+uid 158,0
 )
 *27 (MRCItem
 litem &17
 pos 3
 dimension 20
-uid 83,0
+uid 160,0
 )
 *28 (MRCItem
 litem &18
 pos 4
 dimension 20
-uid 85,0
+uid 162,0
 )
 ]
 )
@@ -283,23 +279,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp1/hdl"
+value "/home/engr/hwoods2/ece411/mp2/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp1/hds"
+value "/home/engr/hwoods2/ece411/mp2/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp1/hds/@n@z@psplit/interface.info"
+value "/home/engr/hwoods2/ece411/mp2/hds/@n@z@psplit/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp1/hds/@n@z@psplit/interface.user"
+value "/home/engr/hwoods2/ece411/mp2/hds/@n@z@psplit/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp1/hds"
+value "/home/engr/hwoods2/ece411/mp2/hds"
 )
 (vvPair
 variable "appl"
@@ -315,27 +311,27 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp1/hds/@n@z@psplit"
+value "/home/engr/hwoods2/ece411/mp2/hds/@n@z@psplit"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp1/hds/NZPsplit"
+value "/home/engr/hwoods2/ece411/mp2/hds/NZPsplit"
 )
 (vvPair
 variable "date"
-value "09/02/10"
+value "09/12/10"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Sun"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Sunday"
 )
 (vvPair
 variable "dd"
-value "02"
+value "12"
 )
 (vvPair
 variable "entity_name"
@@ -363,7 +359,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx21.ews.illinois.edu"
+value "eelnx38.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -395,11 +391,11 @@ value "September"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp1/hds/@n@z@psplit/interface"
+value "/home/engr/hwoods2/ece411/mp2/hds/@n@z@psplit/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp1/hds/NZPsplit/interface"
+value "/home/engr/hwoods2/ece411/mp2/hds/NZPsplit/interface"
 )
 (vvPair
 variable "project_name"
@@ -439,7 +435,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "21:12:04"
+value "19:42:00"
 )
 (vvPair
 variable "unit"
@@ -447,7 +443,7 @@ value "NZPsplit"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -474,10 +470,10 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *38 (CptPort
-uid 51,0
+uid 128,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 52,0
+uid 129,0
 ro 90
 va (VaSet
 vasetType 1
@@ -486,11 +482,11 @@ fg "0,65535,0"
 xt "23000,6625,23750,7375"
 )
 tg (CPTG
-uid 53,0
+uid 130,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 54,0
+uid 131,0
 va (VaSet
 font "courier,8,0"
 )
@@ -502,28 +498,29 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 55,0
+uid 132,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,58500,4500"
-st "CheckN : OUT    std_logic  ;"
+st "CheckN : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckN"
 t "std_logic"
-o 18
-suid 1,0
+o 23
+suid 6,0
 )
 )
 )
 *39 (CptPort
-uid 56,0
+uid 133,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 57,0
+uid 134,0
 ro 90
 va (VaSet
 vasetType 1
@@ -532,11 +529,11 @@ fg "0,65535,0"
 xt "23000,8625,23750,9375"
 )
 tg (CPTG
-uid 58,0
+uid 135,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 59,0
+uid 136,0
 va (VaSet
 font "courier,8,0"
 )
@@ -548,28 +545,29 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 60,0
+uid 137,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,58500,5400"
-st "CheckP : OUT    std_logic  ;"
+st "CheckP : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckP"
 t "std_logic"
-o 19
-suid 2,0
+o 24
+suid 7,0
 )
 )
 )
 *40 (CptPort
-uid 61,0
+uid 138,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 62,0
+uid 139,0
 ro 90
 va (VaSet
 vasetType 1
@@ -578,11 +576,11 @@ fg "0,65535,0"
 xt "23000,7625,23750,8375"
 )
 tg (CPTG
-uid 63,0
+uid 140,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 64,0
+uid 141,0
 va (VaSet
 font "courier,8,0"
 )
@@ -594,28 +592,29 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 65,0
+uid 142,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,57500,6300"
-st "CheckZ : OUT    std_logic "
+st "CheckZ : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckZ"
 t "std_logic"
-o 20
-suid 3,0
+o 25
+suid 8,0
 )
 )
 )
 *41 (CptPort
-uid 66,0
+uid 143,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 67,0
+uid 144,0
 ro 90
 va (VaSet
 vasetType 1
@@ -624,42 +623,43 @@ fg "0,65535,0"
 xt "14250,7625,15000,8375"
 )
 tg (CPTG
-uid 68,0
+uid 145,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 69,0
+uid 146,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,7550,18000,8450"
-st "dest"
+xt "16000,7550,19000,8450"
+st "destin"
 blo "16000,8250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 70,0
+uid 147,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,58000,3600"
-st "dest   : IN     LC3b_reg  ;"
+st "destin : IN     LC3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
-n "dest"
+n "destin"
 t "LC3b_reg"
-o 44
-suid 4,0
+o 60
+suid 9,0
 )
 )
 )
 *42 (CptPort
-uid 71,0
+uid 148,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 72,0
+uid 149,0
 ro 90
 va (VaSet
 vasetType 1
@@ -668,11 +668,11 @@ fg "0,65535,0"
 xt "14250,8625,15000,9375"
 )
 tg (CPTG
-uid 73,0
+uid 150,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 74,0
+uid 151,0
 va (VaSet
 font "courier,8,0"
 )
@@ -683,19 +683,20 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 75,0
+uid 152,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,58500,2700"
-st "clk    : IN     std_logic  ;"
+st "clk    : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 16
-suid 5,0
+o 21
+suid 10,0
 )
 )
 )
@@ -784,7 +785,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -1126,14 +1127,13 @@ uid 50,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,15000,7200"
+xt "0,900,14500,6300"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
-USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;"
+USE ece411.LC3b_types.all;"
 tm "PackageList"
 )
 ]
@@ -1382,5 +1382,5 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 115,0
+lastUid 162,0
 )
