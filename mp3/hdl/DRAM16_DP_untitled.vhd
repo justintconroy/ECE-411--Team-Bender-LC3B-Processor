@@ -18,17 +18,18 @@ USE ece411.LC3b_types.all;
 
 ENTITY DRAM16_DP IS
    PORT( 
+      reset_l    : IN     std_logic;
+      D_DATAOUT  : OUT    LC3b_word;
+      D_MRESP_H  : OUT    std_logic;
+      I_DATAOUT  : OUT    LC3b_word;
+      I_MRESP_H  : OUT    std_logic;
+      clk        : IN     std_logic;
       D_ADDRESS  : IN     LC3b_word;
       D_DATAIN   : IN     LC3b_word;
       D_MREAD_L  : IN     std_logic;
       D_MWRITE_L : IN     std_logic;
       I_ADDRESS  : IN     LC3b_word;
-      I_MREAD_L  : IN     std_logic;
-      RESET_L    : IN     std_logic;
-      D_DATAOUT  : OUT    LC3b_word;
-      D_MRESP_H  : OUT    std_logic;
-      I_DATAOUT  : OUT    LC3b_word;
-      I_MRESP_H  : OUT    std_logic
+      I_MREAD_L  : IN     std_logic
    );
 
 -- Declarations

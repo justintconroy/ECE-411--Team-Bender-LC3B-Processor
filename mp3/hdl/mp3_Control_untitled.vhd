@@ -16,8 +16,7 @@ USE ece411.LC3b_types.all;
 
 ENTITY mp3_Control IS
    PORT( 
-      InstrToDec : IN     LC3b_word;
-      clk        : IN     std_logic
+      clk : IN     std_logic
    );
 
 -- Declarations

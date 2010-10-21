@@ -15,3 +15,6 @@ Justin -- October 18, 20:30 - 24:00
  github in the hopes that it will be useful. I need to check to make sure
  my teammates are comfortable with using git.
 
+Justin -- October 21, 15:30 - 18:30
+ Worked on adding stuff to the pipeline. Much more work needs to be done.
+ Leaving for dinner right now.

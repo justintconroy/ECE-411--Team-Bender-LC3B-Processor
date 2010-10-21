@@ -15,7 +15,7 @@ LIBRARY ece411;
 USE ece411.LC3b_types.all;
 
 ENTITY mp3_IR IS
-   PORT( 
+   PORT(
       LoadIR      : IN     std_logic;
       instruction : IN     LC3b_word;
       clk         : IN     std_logic;
@@ -24,7 +24,8 @@ ENTITY mp3_IR IS
       SrcB        : OUT    LC3b_reg;
       destin      : OUT    LC3b_reg;
       index6      : OUT    LC3b_index6;
-      offset9     : OUT    LC3b_offset9
+      offset9     : OUT    LC3b_offset9;
+      reset_l     : IN     std_logic
    );
 
 -- Declarations
