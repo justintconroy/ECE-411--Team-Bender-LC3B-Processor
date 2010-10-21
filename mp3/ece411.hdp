@@ -1,5 +1,3 @@
-[DesignChecker]
-ece411 = $HDS_PROJECT_DIR/ece411/designcheck
 [ModelSim]
 ece411 = $HDS_PROJECT_DIR/compile
 mp3lib = /home/engr/manjarrs/newmp1/ece411_given/mp3lib/work
@@ -11,7 +9,6 @@ ece411 = $HDS_PROJECT_DIR/hds
 mp3lib = /home/engr/manjarrs/newmp1/ece411_given/mp3lib/hds
 [hds_settings]
 default_library = ece411
-design_root = ece411.mp2_CPU(struct)mp2_@c@p@u/struct.bd
 version = 1
 [library_type]
 mp3lib = regular

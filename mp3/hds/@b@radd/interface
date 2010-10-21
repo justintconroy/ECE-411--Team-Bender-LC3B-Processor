@@ -14,10 +14,6 @@ unitName "NUMERIC_STD"
 library "ece411"
 unitName "LC3b_types"
 )
-(DmPackageRef
-library "ieee"
-unitName "std_logic_arith"
-)
 ]
 libraryRefs [
 "ieee"
@@ -29,7 +25,7 @@ appVersion "2005.3 (Build 75)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 16,0
+suid 8,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -70,49 +66,48 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
-m 1
 decl (Decl
-n "BRaddout"
+n "ADJ9out"
 t "LC3b_word"
-o 39
-suid 13,0
+o 32
+suid 5,0
 )
 )
-uid 221,0
+uid 141,0
 )
 *15 (LogPort
 port (LogicalPort
-lang 2
+m 1
 decl (Decl
-n "PCOffMuxOut"
+n "Braddout"
 t "LC3b_word"
-o 63
-suid 14,0
+o 35
+suid 6,0
 )
 )
-uid 223,0
+uid 143,0
 )
 *16 (LogPort
 port (LogicalPort
 decl (Decl
 n "PCout"
 t "LC3b_word"
-o 49
-suid 15,0
+o 43
+suid 7,0
 )
 )
-uid 225,0
+uid 145,0
 )
 *17 (LogPort
 port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 20
-suid 16,0
+o 18
+suid 8,0
 )
 )
-uid 227,0
+uid 147,0
 )
 ]
 )
@@ -168,25 +163,25 @@ uid 99,0
 litem &14
 pos 0
 dimension 20
-uid 222,0
+uid 142,0
 )
 *24 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 224,0
+uid 144,0
 )
 *25 (MRCItem
 litem &16
 pos 2
 dimension 20
-uid 226,0
+uid 146,0
 )
 *26 (MRCItem
 litem &17
 pos 3
 dimension 20
-uid 228,0
+uid 148,0
 )
 ]
 )
@@ -265,23 +260,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp2/hdl"
+value "/home/engr/hwoods2/ece411/mp2/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp2/hds"
+value "/home/engr/hwoods2/ece411/mp2/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp2/hds/@b@radd/interface.info"
+value "/home/engr/hwoods2/ece411/mp2/hds/@b@radd/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp2/hds/@b@radd/interface.user"
+value "/home/engr/hwoods2/ece411/mp2/hds/@b@radd/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp2/hds"
+value "/home/engr/hwoods2/ece411/mp2/hds"
 )
 (vvPair
 variable "appl"
@@ -297,27 +292,27 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp2/hds/@b@radd"
+value "/home/engr/hwoods2/ece411/mp2/hds/@b@radd"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp2/hds/BRadd"
+value "/home/engr/hwoods2/ece411/mp2/hds/BRadd"
 )
 (vvPair
 variable "date"
-value "09/16/10"
+value "09/12/10"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Sun"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Sunday"
 )
 (vvPair
 variable "dd"
-value "16"
+value "12"
 )
 (vvPair
 variable "entity_name"
@@ -345,7 +340,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx39.ews.illinois.edu"
+value "eelnx12.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -377,11 +372,11 @@ value "September"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp2/hds/@b@radd/interface"
+value "/home/engr/hwoods2/ece411/mp2/hds/@b@radd/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp2/hds/BRadd/interface"
+value "/home/engr/hwoods2/ece411/mp2/hds/BRadd/interface"
 )
 (vvPair
 variable "project_name"
@@ -421,7 +416,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "18:46:47"
+value "14:34:09"
 )
 (vvPair
 variable "unit"
@@ -429,7 +424,7 @@ value "BRadd"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -456,185 +451,172 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *36 (CptPort
-uid 201,0
+uid 121,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 202,0
+uid 122,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "30000,7625,30750,8375"
+xt "14250,11625,15000,12375"
 )
 tg (CPTG
-uid 203,0
+uid 123,0
 ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
+stg "VerticalLayoutStrategy"
 f (Text
-uid 204,0
+uid 124,0
 va (VaSet
 font "courier,8,0"
 )
-xt "25000,7550,29000,8450"
-st "BRaddout"
-ju 2
-blo "29000,8250"
+xt "16000,11550,19500,12450"
+st "ADJ9out"
+blo "16000,12250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 205,0
+uid 125,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,4500,60000,5400"
-st "BRaddout    : OUT    LC3b_word 
-"
 )
 thePort (LogicalPort
-m 1
 decl (Decl
-n "BRaddout"
+n "ADJ9out"
 t "LC3b_word"
-o 39
-suid 13,0
+o 32
+suid 5,0
 )
 )
 )
 *37 (CptPort
-uid 206,0
+uid 126,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 207,0
+uid 127,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,8625,15000,9375"
+xt "23000,9625,23750,10375"
 )
 tg (CPTG
-uid 208,0
+uid 128,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
-uid 209,0
+uid 129,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,8550,22000,9450"
-st "PCOffMuxOut"
-blo "16000,9250"
+xt "18000,9550,22000,10450"
+st "Braddout"
+ju 2
+blo "22000,10250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 210,0
+uid 130,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,1800,61000,2700"
-st "PCOffMuxOut : IN     LC3b_word  ;
-"
 )
 thePort (LogicalPort
-lang 2
+m 1
 decl (Decl
-n "PCOffMuxOut"
+n "Braddout"
 t "LC3b_word"
-o 63
-suid 14,0
+o 35
+suid 6,0
 )
 )
 )
 *38 (CptPort
-uid 211,0
+uid 131,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 212,0
+uid 132,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,6625,15000,7375"
+xt "14250,7625,15000,8375"
 )
 tg (CPTG
-uid 213,0
+uid 133,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 214,0
+uid 134,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,6550,18500,7450"
+xt "16000,7550,18500,8450"
 st "PCout"
-blo "16000,7250"
+blo "16000,8250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 215,0
+uid 135,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,2700,61000,3600"
-st "PCout       : IN     LC3b_word  ;
-"
 )
 thePort (LogicalPort
 decl (Decl
 n "PCout"
 t "LC3b_word"
-o 49
-suid 15,0
+o 43
+suid 7,0
 )
 )
 )
 *39 (CptPort
-uid 216,0
+uid 136,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 217,0
+uid 137,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,9625,15000,10375"
+xt "14250,12625,15000,13375"
 )
 tg (CPTG
-uid 218,0
+uid 138,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 219,0
+uid 139,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,9550,17500,10450"
+xt "16000,12550,17500,13450"
 st "clk"
-blo "16000,10250"
+blo "16000,13250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 220,0
+uid 140,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,3600,61000,4500"
-st "clk         : IN     std_logic  ;
-"
 )
 thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 20
-suid 16,0
+o 18
+suid 8,0
 )
 )
 )
@@ -647,9 +629,8 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,30000,11000"
+xt "15000,6000,23000,14000"
 )
-oxt "15000,6000,26000,11000"
 biTextGroup (BiTextGroup
 uid 10,0
 ps "CenterOffsetStrategy"
@@ -659,18 +640,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "21000,7600,24000,8500"
+xt "17500,9100,20500,10000"
 st "ece411"
-blo "21000,8300"
+blo "17500,9800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "21000,8500,23500,9400"
+xt "17500,10000,20000,10900"
 st "BRadd"
-blo "21000,9200"
+blo "17500,10700"
 )
 )
 gi *40 (GenericInterface
@@ -683,7 +664,7 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-14500,2500,-4000,3400"
+xt "-8000,6000,2500,6900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -724,7 +705,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -1066,14 +1047,13 @@ uid 50,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,15000,7200"
+xt "0,900,14500,6300"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
-USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;"
+USE ece411.LC3b_types.all;"
 tm "PackageList"
 )
 ]
@@ -1322,5 +1302,5 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 228,0
+lastUid 148,0
 )

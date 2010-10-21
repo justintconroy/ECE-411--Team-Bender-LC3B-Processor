@@ -1,0 +1,32 @@
+
+****New Blocks*****
+RipBit5: Rips bits 4 and 5 from the instruction register and sends the values to the control unit.  Used by ADD, AND, SHF  determine which form of these instructions is being used.
+
+ADJ6: Sign extends the lower 6 bits of the instruction and left shifts them by one.  Used by LDI, STI
+
+ADJ5: Sign extends the lower 5 bits of the instruction.  Used by by AND and ADD to support immediate values.
+
+offset6: Sign extends the lower 6 bits of the instruction.  Used by STB and LDB.
+
+ADJ4: Sign extends the lower 4 bits of the instruction.  Used by SHF to support immediate values.
+
+CpyLowByte:  Copies the low byte of a register output into the high byte.  This is used by STB instruction to aid in storing the low byte of the register into the memory.
+
+RipRFABit0out:  Copies the least significant bit from the ALU output and sends the value to the control unit.  Used by the STB and LDB to determine the whether the intended address is even or odd.
+
+Ripbit11:  Rips bit 11 from the instruction register and sends the value to the control unit.  This is ued by the JSR instruction to determine if it is a JSR or JSRR.
+
+ADJ8:  Zero extends and left shifts the lower 8 bits of the instruction.  Used by the TRAP instruction to calculate the intended address.
+
+ADJ11: Sign extends and left shifts the lower 11 bits of the isntruction.  Used by the JSR instruction as an offset.
+
+JSRadd:  Adds the sign extended and shifted lower 11 bits of the instruction with the incremented PC.  Used by the JSR instruction to determine the new PC value.
+
+ClrByteL:  Clears the upper 8 bits of the output from the MDR to be sent back to the register file.  Used by LDB to insure that only the low 8 byte is loaded into the register.
+
+ClrByteH:  Clears the lower 8 bits from the MDR output, and shift the upper 8 bits into the lower 8 positions to be sent back to the register file.  Used by LDB to insure that only the high 8 bytes are loaded into the register.
+
+******Modified MP1 Blocks******
+Instruction Register:  Added 3 new outputs to support the various offsets used by other instructions, and bit ripping the instruction for use by the control unit.
+
+ALU: Now has support for performing logical left shifts, logical right shifts, and arithmetic right shifts.  Used by the SHF instruction. 

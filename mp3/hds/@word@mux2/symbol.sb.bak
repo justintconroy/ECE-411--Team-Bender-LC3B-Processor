@@ -8,7 +8,7 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "std_logic_arith"
+unitName "NUMERIC_STD"
 )
 (DmPackageRef
 library "ece411"
@@ -25,8 +25,7 @@ appVersion "2005.3 (Build 75)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-ordering 1
-suid 6,0
+suid 7,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -67,7 +66,6 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
-lang 2
 decl (Decl
 n "A"
 t "LC3b_word"
@@ -79,7 +77,6 @@ uid 101,0
 )
 *15 (LogPort
 port (LogicalPort
-lang 2
 decl (Decl
 n "B"
 t "LC3b_word"
@@ -95,20 +92,19 @@ decl (Decl
 n "Sel"
 t "std_logic"
 o 3
-suid 3,0
+suid 4,0
 )
 )
 uid 105,0
 )
 *17 (LogPort
 port (LogicalPort
-lang 2
 m 1
 decl (Decl
 n "F"
-t "LC3b_word"
+t "LC3B_word"
 o 4
-suid 5,0
+suid 6,0
 )
 )
 uid 107,0
@@ -263,23 +259,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp1/hdl"
+value "/home/engr/hwoods2/ece411/ece411_given/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp1/hds"
+value "/home/engr/hwoods2/ece411/ece411_given/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp1/hds/@word@mux2/symbol.sb.info"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@word@mux2/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp1/hds/@word@mux2/symbol.sb.user"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@word@mux2/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp1/hds"
+value "/home/engr/hwoods2/ece411/ece411_given/hds"
 )
 (vvPair
 variable "appl"
@@ -295,27 +291,27 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp1/hds/@word@mux2"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@word@mux2"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp1/hds/WordMux2"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/WordMux2"
 )
 (vvPair
 variable "date"
-value "09/02/10"
+value "08/28/10"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Sat"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Saturday"
 )
 (vvPair
 variable "dd"
-value "02"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -343,7 +339,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx21.ews.illinois.edu"
+value "eelnx18.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -359,7 +355,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "09"
+value "08"
 )
 (vvPair
 variable "module_name"
@@ -367,19 +363,19 @@ value "WordMux2"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Aug"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "August"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp1/hds/@word@mux2/symbol.sb"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@word@mux2/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp1/hds/WordMux2/symbol.sb"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/WordMux2/symbol.sb"
 )
 (vvPair
 variable "project_name"
@@ -419,7 +415,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "22:33:11"
+value "16:21:56"
 )
 (vvPair
 variable "unit"
@@ -427,7 +423,7 @@ value "WordMux2"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -463,7 +459,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "16250,24625,17000,25375"
+xt "30250,18625,31000,19375"
 )
 tg (CPTG
 uid 83,0
@@ -474,9 +470,9 @@ uid 84,0
 va (VaSet
 font "courier,8,0"
 )
-xt "18000,24550,18500,25450"
+xt "32000,18550,32500,19450"
 st "A"
-blo "18000,25250"
+blo "32000,19250"
 tm "CptPortNameMgr"
 )
 )
@@ -490,7 +486,6 @@ st "A   : IN     LC3b_word  ;
 "
 )
 thePort (LogicalPort
-lang 2
 decl (Decl
 n "A"
 t "LC3b_word"
@@ -509,7 +504,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "16250,27625,17000,28375"
+xt "30250,29625,31000,30375"
 )
 tg (CPTG
 uid 88,0
@@ -520,9 +515,9 @@ uid 89,0
 va (VaSet
 font "courier,8,0"
 )
-xt "18000,27550,18500,28450"
+xt "32000,29550,32500,30450"
 st "B"
-blo "18000,28250"
+blo "32000,30250"
 tm "CptPortNameMgr"
 )
 )
@@ -536,7 +531,6 @@ st "B   : IN     LC3b_word  ;
 "
 )
 thePort (LogicalPort
-lang 2
 decl (Decl
 n "B"
 t "LC3b_word"
@@ -555,7 +549,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "19625,22049,20375,22799"
+xt "35625,19219,36375,19969"
 )
 tg (CPTG
 uid 93,0
@@ -563,13 +557,14 @@ ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
 uid 94,0
+ro 270
 va (VaSet
 font "courier,8,0"
 )
-xt "19000,23000,20500,23900"
+xt "35550,20969,36450,22469"
 st "Sel"
 ju 2
-blo "20500,23700"
+blo "36250,20969"
 tm "CptPortNameMgr"
 )
 )
@@ -587,7 +582,7 @@ decl (Decl
 n "Sel"
 t "std_logic"
 o 3
-suid 3,0
+suid 4,0
 )
 )
 )
@@ -601,7 +596,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "27000,25334,27750,26084"
+xt "42000,25625,42750,26375"
 )
 tg (CPTG
 uid 98,0
@@ -612,10 +607,10 @@ uid 99,0
 va (VaSet
 font "courier,8,0"
 )
-xt "25500,25550,26000,26450"
+xt "40500,25550,41000,26450"
 st "F"
 ju 2
-blo "26000,26250"
+blo "41000,26250"
 tm "CptPortNameMgr"
 )
 )
@@ -625,17 +620,16 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,56000,5400"
-st "F   : OUT    LC3b_word 
+st "F   : OUT    LC3B_word 
 "
 )
 thePort (LogicalPort
-lang 2
 m 1
 decl (Decl
 n "F"
-t "LC3b_word"
+t "LC3B_word"
 o 4
-suid 5,0
+suid 6,0
 )
 )
 )
@@ -648,9 +642,8 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "17000,22000,27000,30000"
+xt "31000,18000,42000,31000"
 )
-oxt "17000,8000,41000,28000"
 biTextGroup (BiTextGroup
 uid 10,0
 ps "CenterOffsetStrategy"
@@ -660,18 +653,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "19750,25100,22750,26000"
+xt "33750,23100,36750,24000"
 st "ece411"
-blo "19750,25800"
+blo "33750,23800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "19750,26000,23750,26900"
+xt "33750,24000,37750,24900"
 st "WordMux2"
-blo "19750,26700"
+blo "33750,24700"
 )
 )
 gi *40 (GenericInterface
@@ -684,7 +677,7 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "2000,22000,12500,22900"
+xt "16000,25100,26500,26000"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -695,10 +688,10 @@ elements [
 )
 portInstanceVisAsIs 1
 portInstanceVis (PortSigDisplay
-sTC 0
+sIVOD 1
 )
 portVis (PortSigDisplay
-sTC 0
+sIVOD 1
 )
 )
 *41 (Grouping
@@ -723,7 +716,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -787,9 +780,9 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,48050,40700,48950"
+xt "32200,48050,45700,48950"
 st "
-WordMux2 Diagram
+<enter diagram title here>
 "
 tm "CommentText"
 wrapOption 3
@@ -912,9 +905,9 @@ uid 38,0
 va (VaSet
 fg "32768,0,0"
 )
-xt "31600,46500,45400,47500"
+xt "34600,46500,42400,47500"
 st "
-University of Illinois
+Harold Woods
 "
 ju 0
 tm "CommentText"
@@ -1065,10 +1058,10 @@ uid 51,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,15000,6300"
+xt "0,900,14500,6300"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
+USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;"
@@ -1076,8 +1069,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "-3,25,877,1086"
-viewArea "700,-7200,48004,55008"
+windowSize "54,25,1441,938"
+viewArea "-9700,-13200,74108,40224"
 cachedDiagramExtent "0,0,69000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -1322,5 +1315,5 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 145,0
+lastUid 121,0
 )

@@ -1,8 +1,8 @@
 -------------------------------------------------
--- ECE411 MP2 force file.
+-- ECE411 MP1 force file.
 -------------------------------------------------
 
-echo "--- Executing initialization force file for mp2 ---"
+echo "--- Executing initialization force file for mp1 ---"
 
 echo "Setting clock period to 50 ns, starting at 50 ns."
 force /clk 0  0

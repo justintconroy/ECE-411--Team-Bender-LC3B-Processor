@@ -14,10 +14,6 @@ unitName "NUMERIC_STD"
 library "ece411"
 unitName "LC3b_types"
 )
-(DmPackageRef
-library "ieee"
-unitName "std_logic_arith"
-)
 ]
 libraryRefs [
 "ieee"
@@ -73,8 +69,8 @@ port (LogicalPort
 m 1
 decl (Decl
 n "ADJ4out"
-t "lc3b_word"
-o 80
+t "LC3b_word"
+o 66
 suid 1,0
 )
 )
@@ -82,11 +78,10 @@ uid 66,0
 )
 *15 (LogPort
 port (LogicalPort
-lang 2
 decl (Decl
-n "imm4"
-t "LC3b_IMM4"
-o 79
+n "index6"
+t "LC3b_index6"
+o 62
 suid 2,0
 )
 )
@@ -97,7 +92,7 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 24
+o 21
 suid 3,0
 )
 )
@@ -248,23 +243,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp2/hdl"
+value "/home/engr/hwoods2/ece411/mp2/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp2/hds"
+value "/home/engr/hwoods2/ece411/mp2/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp2/hds/@a@d@j4/interface.info"
+value "/home/engr/hwoods2/ece411/mp2/hds/@a@d@j4/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp2/hds/@a@d@j4/interface.user"
+value "/home/engr/hwoods2/ece411/mp2/hds/@a@d@j4/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp2/hds"
+value "/home/engr/hwoods2/ece411/mp2/hds"
 )
 (vvPair
 variable "appl"
@@ -280,27 +275,27 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp2/hds/@a@d@j4"
+value "/home/engr/hwoods2/ece411/mp2/hds/@a@d@j4"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp2/hds/ADJ4"
+value "/home/engr/hwoods2/ece411/mp2/hds/ADJ4"
 )
 (vvPair
 variable "date"
-value "09/17/10"
+value "09/14/10"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "17"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -328,7 +323,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx31.ews.illinois.edu"
+value "eelnx34.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -360,11 +355,11 @@ value "September"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp2/hds/@a@d@j4/interface"
+value "/home/engr/hwoods2/ece411/mp2/hds/@a@d@j4/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp2/hds/ADJ4/interface"
+value "/home/engr/hwoods2/ece411/mp2/hds/ADJ4/interface"
 )
 (vvPair
 variable "project_name"
@@ -404,7 +399,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "15:11:14"
+value "16:43:51"
 )
 (vvPair
 variable "unit"
@@ -412,7 +407,7 @@ value "ADJ4"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -448,7 +443,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "21000,7625,21750,8375"
+xt "23000,7625,23750,8375"
 )
 tg (CPTG
 uid 53,0
@@ -459,10 +454,10 @@ uid 54,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16500,7550,20000,8450"
+xt "18500,7550,22000,8450"
 st "ADJ4out"
 ju 2
-blo "20000,8250"
+blo "22000,8250"
 tm "CptPortNameMgr"
 )
 )
@@ -472,14 +467,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,58000,4500"
-st "ADJ4out : OUT    lc3b_word "
+st "ADJ4out : OUT    LC3b_word "
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "ADJ4out"
-t "lc3b_word"
-o 80
+t "LC3b_word"
+o 66
 suid 1,0
 )
 )
@@ -494,7 +489,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,7625,15000,8375"
+xt "14250,6625,15000,7375"
 )
 tg (CPTG
 uid 58,0
@@ -505,9 +500,9 @@ uid 59,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,7550,18000,8450"
-st "imm4"
-blo "16000,8250"
+xt "16000,6550,19000,7450"
+st "index6"
+blo "16000,7250"
 tm "CptPortNameMgr"
 )
 )
@@ -516,15 +511,14 @@ uid 60,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,2700,59000,3600"
-st "imm4    : IN     LC3b_IMM4  ;"
+xt "44000,2700,60000,3600"
+st "index6  : IN     LC3b_index6  ;"
 )
 thePort (LogicalPort
-lang 2
 decl (Decl
-n "imm4"
-t "LC3b_IMM4"
-o 79
+n "index6"
+t "LC3b_index6"
+o 62
 suid 2,0
 )
 )
@@ -539,7 +533,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,8625,15000,9375"
+xt "14250,7625,15000,8375"
 )
 tg (CPTG
 uid 63,0
@@ -550,9 +544,9 @@ uid 64,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,8550,17500,9450"
+xt "16000,7550,17500,8450"
 st "clk"
-blo "16000,9250"
+blo "16000,8250"
 tm "CptPortNameMgr"
 )
 )
@@ -568,7 +562,7 @@ thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 24
+o 21
 suid 3,0
 )
 )
@@ -582,7 +576,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,21000,10000"
+xt "15000,6000,23000,10000"
 )
 biTextGroup (BiTextGroup
 uid 10,0
@@ -593,18 +587,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "16500,7100,19500,8000"
+xt "17500,7100,20500,8000"
 st "ece411"
-blo "16500,7800"
+blo "17500,7800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "16500,8000,18500,8900"
+xt "17500,8000,19500,8900"
 st "ADJ4"
-blo "16500,8700"
+blo "17500,8700"
 )
 )
 gi *37 (GenericInterface
@@ -617,7 +611,7 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-9000,4000,1500,4900"
+xt "-8000,4000,2500,4900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -658,7 +652,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -1000,14 +994,13 @@ uid 50,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,15000,7200"
+xt "0,900,14500,6300"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
-USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;"
+USE ece411.LC3b_types.all;"
 tm "PackageList"
 )
 ]

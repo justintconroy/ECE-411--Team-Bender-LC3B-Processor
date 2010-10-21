@@ -8,7 +8,7 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "std_logic_arith"
+unitName "NUMERIC_STD"
 )
 (DmPackageRef
 library "ece411"
@@ -173,23 +173,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp2.2/hdl"
+value "/home/engr/hwoods2/ece411/mp2.2/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp2.2/hds"
+value "/home/engr/hwoods2/ece411/mp2.2/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp2.2/hds/@mux2/symbol.sb.info"
+value "/home/engr/hwoods2/ece411/mp2.2/hds/@mux2/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp2.2/hds/@mux2/symbol.sb.user"
+value "/home/engr/hwoods2/ece411/mp2.2/hds/@mux2/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp2.2/hds"
+value "/home/engr/hwoods2/ece411/mp2.2/hds"
 )
 (vvPair
 variable "appl"
@@ -205,27 +205,27 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp2.2/hds/@mux2"
+value "/home/engr/hwoods2/ece411/mp2.2/hds/@mux2"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp2.2/hds/Mux2"
+value "/home/engr/hwoods2/ece411/mp2.2/hds/Mux2"
 )
 (vvPair
 variable "date"
-value "10/08/10"
+value "09/28/10"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "08"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -253,7 +253,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx35.ews.illinois.edu"
+value "eelnx26.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -264,16 +264,12 @@ variable "library"
 value "ece411"
 )
 (vvPair
-variable "library_downstream_HdsLintPlugin"
-value "$HDS_PROJECT_DIR/ece411/designcheck"
-)
-(vvPair
 variable "library_downstream_ModelSimCompiler"
 value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "10"
+value "09"
 )
 (vvPair
 variable "module_name"
@@ -281,19 +277,19 @@ value "Mux2"
 )
 (vvPair
 variable "month"
-value "Oct"
+value "Sep"
 )
 (vvPair
 variable "month_long"
-value "October"
+value "September"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp2.2/hds/@mux2/symbol.sb"
+value "/home/engr/hwoods2/ece411/mp2.2/hds/@mux2/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp2.2/hds/Mux2/symbol.sb"
+value "/home/engr/hwoods2/ece411/mp2.2/hds/Mux2/symbol.sb"
 )
 (vvPair
 variable "project_name"
@@ -333,7 +329,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "09:33:31"
+value "21:51:58"
 )
 (vvPair
 variable "unit"
@@ -341,7 +337,7 @@ value "Mux2"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -447,7 +443,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -789,10 +785,10 @@ uid 50,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,15000,6300"
+xt "0,900,14500,6300"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
+USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;"

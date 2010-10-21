@@ -14,10 +14,6 @@ unitName "NUMERIC_STD"
 library "ece411"
 unitName "LC3b_types"
 )
-(DmPackageRef
-library "ieee"
-unitName "std_logic_arith"
-)
 ]
 libraryRefs [
 "ieee"
@@ -73,7 +69,7 @@ port (LogicalPort
 decl (Decl
 n "PCout"
 t "LC3b_word"
-o 37
+o 43
 suid 1,0
 )
 )
@@ -85,7 +81,7 @@ m 1
 decl (Decl
 n "PCPlus2out"
 t "LC3b_word"
-o 36
+o 44
 suid 2,0
 )
 )
@@ -96,7 +92,7 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 16
+o 3
 suid 3,0
 )
 )
@@ -247,23 +243,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/mp1/hdl"
+value "/home/engr/hwoods2/ece411/ece411_given/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/mp1/hds"
+value "/home/engr/hwoods2/ece411/ece411_given/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/mp1/hds/@plus2/interface.info"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@plus2/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/mp1/hds/@plus2/interface.user"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@plus2/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/mp1/hds"
+value "/home/engr/hwoods2/ece411/ece411_given/hds"
 )
 (vvPair
 variable "appl"
@@ -279,27 +275,27 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/mp1/hds/@plus2"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@plus2"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/mp1/hds/Plus2"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/Plus2"
 )
 (vvPair
 variable "date"
-value "09/02/10"
+value "08/29/10"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Sun"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Sunday"
 )
 (vvPair
 variable "dd"
-value "02"
+value "29"
 )
 (vvPair
 variable "entity_name"
@@ -327,7 +323,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx21.ews.illinois.edu"
+value "eelnx18.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -343,7 +339,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "09"
+value "08"
 )
 (vvPair
 variable "module_name"
@@ -351,19 +347,19 @@ value "Plus2"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Aug"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "August"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/mp1/hds/@plus2/interface"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/@plus2/interface"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/mp1/hds/Plus2/interface"
+value "/home/engr/hwoods2/ece411/ece411_given/hds/Plus2/interface"
 )
 (vvPair
 variable "project_name"
@@ -403,7 +399,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "20:58:04"
+value "14:57:49"
 )
 (vvPair
 variable "unit"
@@ -411,7 +407,7 @@ value "Plus2"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "hwoods2"
 )
 (vvPair
 variable "version"
@@ -447,7 +443,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "21000,7625,21750,8375"
+xt "22000,8625,22750,9375"
 )
 tg (CPTG
 uid 53,0
@@ -458,10 +454,10 @@ uid 54,0
 va (VaSet
 font "courier,8,0"
 )
-xt "17500,7550,20000,8450"
+xt "18500,8550,21000,9450"
 st "PCout"
 ju 2
-blo "20000,8250"
+blo "21000,9250"
 tm "CptPortNameMgr"
 )
 )
@@ -477,7 +473,7 @@ thePort (LogicalPort
 decl (Decl
 n "PCout"
 t "LC3b_word"
-o 37
+o 43
 suid 1,0
 )
 )
@@ -492,7 +488,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,7625,15000,8375"
+xt "14250,8625,15000,9375"
 )
 tg (CPTG
 uid 58,0
@@ -503,9 +499,9 @@ uid 59,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,7550,21500,8450"
+xt "16000,8550,21500,9450"
 st "PCPlus2out"
-blo "16000,8250"
+blo "16000,9250"
 tm "CptPortNameMgr"
 )
 )
@@ -522,7 +518,7 @@ m 1
 decl (Decl
 n "PCPlus2out"
 t "LC3b_word"
-o 36
+o 44
 suid 2,0
 )
 )
@@ -537,7 +533,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,8625,15000,9375"
+xt "14250,9625,15000,10375"
 )
 tg (CPTG
 uid 63,0
@@ -548,9 +544,9 @@ uid 64,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,8550,17500,9450"
+xt "16000,9550,17500,10450"
 st "clk"
-blo "16000,9250"
+blo "16000,10250"
 tm "CptPortNameMgr"
 )
 )
@@ -566,7 +562,7 @@ thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 16
+o 3
 suid 3,0
 )
 )
@@ -580,7 +576,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,21000,10000"
+xt "15000,6000,22000,12000"
 )
 biTextGroup (BiTextGroup
 uid 10,0
@@ -591,18 +587,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "16500,7100,19500,8000"
+xt "17000,8100,20000,9000"
 st "ece411"
-blo "16500,7800"
+blo "17000,8800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "16500,8000,19000,8900"
+xt "17000,9000,19500,9900"
 st "Plus2"
-blo "16500,8700"
+blo "17000,9700"
 )
 )
 gi *37 (GenericInterface
@@ -615,7 +611,7 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-9000,4000,1500,4900"
+xt "-8500,5000,2000,5900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -656,7 +652,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,45700,50950"
+xt "32200,50050,45200,50950"
 st "
 by %user on %dd %month %year
 "
@@ -998,14 +994,13 @@ uid 50,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,15000,7200"
+xt "0,900,14500,6300"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
-USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;"
+USE ece411.LC3b_types.all;"
 tm "PackageList"
 )
 ]

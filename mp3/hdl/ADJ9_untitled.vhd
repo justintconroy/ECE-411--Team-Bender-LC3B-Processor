@@ -2,8 +2,8 @@
 -- VHDL Architecture ece411.ADJ9.untitled
 --
 -- Created:
---          by - jconroy2.stdt (eelnx21.ews.illinois.edu)
---          at - 21:00:35 09/02/10
+--          by - hwoods2.stdt (eelnx18.ews.illinois.edu)
+--          at - 15:19:24 08/29/10
 --
 -- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
 --
@@ -13,7 +13,6 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
-USE ieee.std_logic_arith.all;
 
 ENTITY ADJ9 IS
    PORT( 
@@ -27,8 +26,7 @@ ENTITY ADJ9 IS
 END ADJ9 ;
 
 --
-ARCHITECTURE untitled OF ADJ9 IS
+ARCHITECTURE UNTITLED OF ADJ9 IS
 BEGIN
-	ADJ9OUT <= offset9(8) & offset9(8) & offset9(8) & offset9(8) & offset9(8) & offset9(8) & offset9 & '0' AFTER DELAY_MUX2;
-END ARCHITECTURE untitled;
-
+	ADJ9OUT <= OFFSET9(8) & OFFSET9(8) & OFFSET9(8) & OFFSET9(8) & OFFSET9(8) & OFFSET9(8) & OFFSET9 & '0' AFTER DELAY_MUX2;
+END UNTITLED;

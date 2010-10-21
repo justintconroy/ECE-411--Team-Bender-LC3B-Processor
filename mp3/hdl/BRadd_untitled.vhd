@@ -2,8 +2,8 @@
 -- VHDL Architecture ece411.BRadd.untitled
 --
 -- Created:
---          by - jconroy2.stdt (eelnx21.ews.illinois.edu)
---          at - 21:09:20 09/02/10
+--          by - hwoods2.stdt (eelnx29.ews.illinois.edu)
+--          at - 16:22:09 08/30/10
 --
 -- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
 --
@@ -13,14 +13,13 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
---USE ieee.std_logic_arith.all;
 
 ENTITY BRadd IS
    PORT( 
-      PCOffMuxOut : IN     LC3b_word;
-      PCout       : IN     LC3b_word;
-      clk         : IN     std_logic;
-      BRaddout    : OUT    LC3b_word
+      ADJ9out  : IN     LC3b_word;
+      PCout    : IN     LC3b_word;
+      clk      : IN     std_logic;
+      BRaddout : OUT    LC3b_word
    );
 
 -- Declarations
@@ -30,9 +29,9 @@ END BRadd ;
 --
 ARCHITECTURE untitled OF BRadd IS
 BEGIN
-	VHDL_BRadd : PROCESS (PCOUT,PCOffMuxOut)
-	BEGIN  -- PROCESS
-		BRaddout <= STD_LOGIC_VECTOR(UNSIGNED(PCOUT) + UNSIGNED(PCOffMuxOut)) AFTER DELAY_ADDER;
-	END PROCESS;
+  VHDL_BRadd : PROCESS (ADJ9out, PCOUT)
+  BEGIN  -- PROCESS
+   BRaddout <= STD_LOGIC_VECTOR(UNSIGNED(PCOUT) + UNSIGNED(ADJ9out)) AFTER DELAY_ADDER;
+  END PROCESS;
 END ARCHITECTURE untitled;
 
