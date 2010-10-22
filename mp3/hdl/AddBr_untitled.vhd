@@ -16,10 +16,11 @@ USE ece411.LC3b_types.all;
 
 ENTITY AddBr IS
    PORT( 
-       ADJ9out  : IN     LC3b_word;
-       PCout    : IN     LC3b_word;
-       clk      : IN     std_logic;
-       BRaddout : OUT    LC3b_word
+      ADJ9out  : IN     LC3b_word;
+      PCout    : IN     LC3b_word;
+      clk      : IN     std_logic;
+      BRaddout : OUT    LC3b_word;
+      reset_l  : IN     std_logic
    );
 
 -- Declarations

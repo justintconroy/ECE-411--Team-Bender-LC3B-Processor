@@ -30,16 +30,21 @@ END ContWordGen ;
 ARCHITECTURE untitled OF ContWordGen IS
 BEGIN
 	Process (ContInputWord)
-		Variable INPUT_WORD : LC3B_Control_Input_Word;
+		Variable INPUT_WORD  : LC3B_Control_Input_Word;
 		Variable OUTPUT_WORD : LC3B_Control_Word;
 	BEGIN
 		case INPUT_WORD is
-			when ADDI0 =>
-				OUTPUT_WORD <= ADDI0 after DELAY_CONTROL;
-			when ADDI1 =>
-				OUTPUT_WORD <= ADDI1 after DELAY_CONTROL;
-
+			when ADDR =>
+				OUTPUT_WORD <= ADDR & '0' & ALU_ADD;
+			when ADDI =>
+				OUTPUT_WORD <= ADDI & '1' & ALU_ADD;
+			when others =>
 		end case;
+		ContWordToEx <= OUTPUT_WORD after delay_ROM;
 	END PROCESS;
-END ARCHITECTURE untitled;
-???
+END untitled;
+
+
+
+
+
