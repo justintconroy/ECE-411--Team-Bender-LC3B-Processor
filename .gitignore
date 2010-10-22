@@ -2,5 +2,6 @@
 .*.swp
 *.asm.Symbols.csv
 *.aprj
+*.*.bak
 *.bak
 *.lck

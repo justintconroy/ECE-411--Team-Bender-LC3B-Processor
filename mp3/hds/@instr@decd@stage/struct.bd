@@ -226,7 +226,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "20:48:05"
+value "20:59:22"
 )
 (vvPair
 variable "unit"
@@ -271,8 +271,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-12300,26000,-11400"
-st "PCToDec       : LC3b_word
-"
+st "PCToDec       : LC3b_word"
 )
 )
 *2 (PortIoIn
@@ -356,8 +355,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-11400,26000,-10500"
-st "clk           : std_logic
-"
+st "clk           : std_logic"
 )
 )
 *5 (Grouping
@@ -709,8 +707,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-3300,29500,-2400"
-st "SIGNAL instruction   : LC3b_word
-"
+st "SIGNAL instruction   : LC3b_word"
 )
 )
 *17 (PortIoIn
@@ -773,8 +770,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-10500,26000,-9600"
-st "reset_l       : std_logic
-"
+st "reset_l       : std_logic"
 )
 )
 *19 (PortIoOut
@@ -837,8 +833,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-9600,30000,-8700"
-st "ContWordToEx  : LC3b_Control_Word
-"
+st "ContWordToEx  : LC3b_Control_Word"
 )
 )
 *21 (PortIoIn
@@ -901,8 +896,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-13200,26000,-12300"
-st "InstrToDec    : LC3b_word
-"
+st "InstrToDec    : LC3b_word"
 )
 )
 *23 (PortIoIn
@@ -1161,8 +1155,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-4200,36500,-3300"
-st "SIGNAL ContInputWord : LC3B_Control_Input_Word
-"
+st "SIGNAL ContInputWord : LC3B_Control_Input_Word"
 )
 )
 *35 (GlobalConnector
@@ -1575,8 +1568,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-7800,26000,-6900"
-st "imm5          : LC3B_Word
-"
+st "imm5          : LC3B_Word"
 )
 )
 *51 (Net
@@ -1593,8 +1585,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-6900,26000,-6000"
-st "off6          : LC3B_Word
-"
+st "off6          : LC3B_Word"
 )
 )
 *52 (Net
@@ -1611,8 +1602,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-6000,26000,-5100"
-st "off6ns        : LC3B_word
-"
+st "off6ns        : LC3B_word"
 )
 )
 *53 (Net
@@ -1629,8 +1619,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-8700,26000,-7800"
-st "imm4          : LC3B_Word
-"
+st "imm4          : LC3B_Word"
 )
 )
 *54 (Wire

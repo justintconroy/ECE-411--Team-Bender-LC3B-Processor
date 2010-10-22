@@ -231,7 +231,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "17:39:04"
+value "17:40:10"
 )
 (vvPair
 variable "unit"
@@ -855,16 +855,16 @@ optionalChildren [
 uid 165,0
 sl 0
 ro 270
-xt "-7000,14625,-5500,15375"
+xt "-7000,13625,-5500,14375"
 )
 (Line
 uid 166,0
 sl 0
 ro 270
-xt "-5500,15000,-5000,15000"
+xt "-5500,14000,-5000,14000"
 pts [
-"-5500,15000"
-"-5000,15000"
+"-5500,14000"
+"-5000,14000"
 ]
 )
 ]
@@ -880,10 +880,10 @@ uid 168,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-7500,15550,-3000,16450"
+xt "-7500,14550,-3000,15450"
 st "I_MRESP_H"
 ju 2
-blo "-3000,16250"
+blo "-3000,15250"
 tm "WireNameMgr"
 )
 )
@@ -2365,10 +2365,10 @@ uid 170,0
 va (VaSet
 vasetType 3
 )
-xt "-5000,15000,-3000,15000"
+xt "-5000,14000,-3000,14000"
 pts [
-"-5000,15000"
-"-3000,15000"
+"-5000,14000"
+"-3000,14000"
 ]
 )
 start &18
@@ -2748,7 +2748,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "509,76,1597,926"
-viewArea "-21029,5985,49036,61146"
+viewArea "-11471,882,58594,56043"
 cachedDiagramExtent "-15000,-18000,70000,27350"
 hasePageBreakOrigin 1
 pageBreakOrigin "-77000,-51000"
