@@ -16,13 +16,13 @@ USE ece411.LC3b_types.all;
 
 ENTITY ImmBlock IS
    PORT( 
-      clk         : IN     std_logic;
-      instruction : IN     LC3b_word;
-      reset_l     : IN     std_logic;
-      imm4        : OUT    LC3B_Word;
-      imm5        : OUT    LC3B_Word;
-      off6        : OUT    LC3B_Word;
-      off6ns      : OUT    LC3B_word
+      clk          : IN     std_logic;
+      instruction  : IN     LC3b_word;
+      reset_l      : IN     std_logic;
+      imm4_To_Ex   : OUT    LC3B_Word;
+      imm5_To_Ex   : OUT    LC3B_Word;
+      off6_To_Ex   : OUT    LC3B_Word;
+      off6ns_To_Ex : OUT    LC3B_Word
    );
 
 -- Declarations

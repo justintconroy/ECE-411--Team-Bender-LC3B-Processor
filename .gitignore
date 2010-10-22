@@ -5,3 +5,4 @@
 *.*.bak
 *.bak
 *.lck
+.cache.dat

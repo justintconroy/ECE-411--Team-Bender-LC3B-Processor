@@ -226,7 +226,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "20:48:05"
+value "21:48:27"
 )
 (vvPair
 variable "unit"
@@ -271,8 +271,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-12300,26000,-11400"
-st "PCToDec       : LC3b_word
-"
+st "PCToDec       : LC3b_word"
 )
 )
 *2 (PortIoIn
@@ -356,8 +355,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-11400,26000,-10500"
-st "clk           : std_logic
-"
+st "clk           : std_logic"
 )
 )
 *5 (Grouping
@@ -709,8 +707,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-3300,29500,-2400"
-st "SIGNAL instruction   : LC3b_word
-"
+st "SIGNAL instruction   : LC3b_word"
 )
 )
 *17 (PortIoIn
@@ -773,8 +770,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-10500,26000,-9600"
-st "reset_l       : std_logic
-"
+st "reset_l       : std_logic"
 )
 )
 *19 (PortIoOut
@@ -837,8 +833,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-9600,30000,-8700"
-st "ContWordToEx  : LC3b_Control_Word
-"
+st "ContWordToEx  : LC3b_Control_Word"
 )
 )
 *21 (PortIoIn
@@ -901,8 +896,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-13200,26000,-12300"
-st "InstrToDec    : LC3b_word
-"
+st "InstrToDec    : LC3b_word"
 )
 )
 *23 (PortIoIn
@@ -1161,8 +1155,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "13000,-4200,36500,-3300"
-st "SIGNAL ContInputWord : LC3B_Control_Input_Word
-"
+st "SIGNAL ContInputWord : LC3B_Control_Input_Word"
 )
 )
 *35 (GlobalConnector
@@ -1419,8 +1412,8 @@ uid 744,0
 va (VaSet
 font "courier,8,0"
 )
-xt "41000,23550,43000,24450"
-st "off6"
+xt "41000,23550,46500,24450"
+st "off6_To_Ex"
 blo "41000,24250"
 tm "WireNameMgr"
 )
@@ -1464,8 +1457,8 @@ uid 750,0
 va (VaSet
 font "courier,8,0"
 )
-xt "41000,21550,43000,22450"
-st "imm5"
+xt "41000,21550,46500,22450"
+st "imm5_To_Ex"
 blo "41000,22250"
 tm "WireNameMgr"
 )
@@ -1509,8 +1502,8 @@ uid 756,0
 va (VaSet
 font "courier,8,0"
 )
-xt "41000,25550,44000,26450"
-st "off6ns"
+xt "41000,25550,47500,26450"
+st "off6ns_To_Ex"
 blo "41000,26250"
 tm "WireNameMgr"
 )
@@ -1554,83 +1547,79 @@ uid 762,0
 va (VaSet
 font "courier,8,0"
 )
-xt "41000,27550,43000,28450"
-st "imm4"
+xt "41000,27550,46500,28450"
+st "imm4_To_Ex"
 blo "41000,28250"
 tm "WireNameMgr"
 )
 )
 )
 *50 (Net
-uid 795,0
+uid 847,0
 decl (Decl
-n "imm5"
+n "imm5_To_Ex"
 t "LC3B_Word"
 o 8
-suid 26,0
+suid 30,0
 )
 declText (MLText
-uid 796,0
+uid 848,0
 va (VaSet
 font "courier,8,0"
 )
 xt "13000,-7800,26000,-6900"
-st "imm5          : LC3B_Word
-"
+st "imm5_To_Ex    : LC3B_Word"
 )
 )
 *51 (Net
-uid 797,0
+uid 849,0
 decl (Decl
-n "off6"
+n "off6_To_Ex"
 t "LC3B_Word"
 o 9
-suid 27,0
+suid 31,0
 )
 declText (MLText
-uid 798,0
+uid 850,0
 va (VaSet
 font "courier,8,0"
 )
 xt "13000,-6900,26000,-6000"
-st "off6          : LC3B_Word
-"
+st "off6_To_Ex    : LC3B_Word"
 )
 )
 *52 (Net
-uid 799,0
+uid 851,0
 decl (Decl
-n "off6ns"
+n "off6ns_To_Ex"
 t "LC3B_word"
 o 10
-suid 28,0
+suid 32,0
 )
 declText (MLText
-uid 800,0
+uid 852,0
 va (VaSet
 font "courier,8,0"
 )
 xt "13000,-6000,26000,-5100"
-st "off6ns        : LC3B_word
-"
+st "off6ns_To_Ex  : LC3B_word"
 )
 )
 *53 (Net
-uid 801,0
+uid 853,0
 decl (Decl
-n "imm4"
+n "imm4_To_Ex"
 t "LC3B_Word"
 o 11
-suid 29,0
+suid 33,0
 )
 declText (MLText
-uid 802,0
+uid 854,0
 va (VaSet
 font "courier,8,0"
 )
 xt "13000,-8700,26000,-7800"
-st "imm4          : LC3B_Word
-"
+st "imm4_To_Ex    : LC3B_Word"
 )
 )
 *54 (Wire
@@ -1998,8 +1987,8 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "34000,21100,36000,22000"
-st "imm5"
+xt "34000,21100,39500,22000"
+st "imm5_To_Ex"
 blo "34000,21800"
 tm "WireNameMgr"
 )
@@ -2039,8 +2028,8 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "34000,23100,36000,24000"
-st "off6"
+xt "34000,23100,39500,24000"
+st "off6_To_Ex"
 blo "34000,23800"
 tm "WireNameMgr"
 )
@@ -2080,8 +2069,8 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "34000,25100,37000,26000"
-st "off6ns"
+xt "34000,25100,40500,26000"
+st "off6ns_To_Ex"
 blo "34000,25800"
 tm "WireNameMgr"
 )
@@ -2121,8 +2110,8 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "34000,27100,36000,28000"
-st "imm4"
+xt "34000,27100,39500,28000"
+st "imm4_To_Ex"
 blo "34000,27800"
 tm "WireNameMgr"
 )
@@ -2246,13 +2235,13 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "138,171,1362,962"
-viewArea "-6300,4922,62769,47840"
+windowSize "135,171,1359,962"
+viewArea "-6300,4900,62769,47818"
 cachedDiagramExtent "-9500,-15000,60000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-78000,-51000"
 active 1
-lastUid 810,0
+lastUid 862,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -3297,7 +3286,7 @@ tm "BdDeclarativeTextMgr"
 )
 commonDM (CommonDM
 ldm (LogicalDM
-suid 29,0
+suid 33,0
 usingSuid 1
 emptyRow *99 (LEmptyRow
 )
@@ -3421,49 +3410,49 @@ uid 639,0
 port (LogicalPort
 m 1
 decl (Decl
-n "imm5"
+n "imm5_To_Ex"
 t "LC3B_Word"
 o 8
-suid 26,0
+suid 30,0
 )
 )
-uid 803,0
+uid 855,0
 )
 *120 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
-n "off6"
+n "off6_To_Ex"
 t "LC3B_Word"
 o 9
-suid 27,0
+suid 31,0
 )
 )
-uid 805,0
+uid 857,0
 )
 *121 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
-n "off6ns"
+n "off6ns_To_Ex"
 t "LC3B_word"
 o 10
-suid 28,0
+suid 32,0
 )
 )
-uid 807,0
+uid 859,0
 )
 *122 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
-n "imm4"
+n "imm4_To_Ex"
 t "LC3B_Word"
 o 11
-suid 29,0
+suid 33,0
 )
 )
-uid 809,0
+uid 861,0
 )
 ]
 )
@@ -3561,25 +3550,25 @@ uid 640,0
 litem &119
 pos 7
 dimension 20
-uid 804,0
+uid 856,0
 )
 *136 (MRCItem
 litem &120
 pos 8
 dimension 20
-uid 806,0
+uid 858,0
 )
 *137 (MRCItem
 litem &121
 pos 9
 dimension 20
-uid 808,0
+uid 860,0
 )
 *138 (MRCItem
 litem &122
 pos 10
 dimension 20
-uid 810,0
+uid 862,0
 )
 ]
 )

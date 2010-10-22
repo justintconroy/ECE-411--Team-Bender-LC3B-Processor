@@ -75,23 +75,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hdl"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.info"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.user"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -107,11 +107,11 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline"
 )
 (vvPair
 variable "date"
@@ -155,7 +155,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx35.ews.illinois.edu"
+value "eelnx36.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -191,11 +191,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline/struct.bd"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline/struct.bd"
 )
 (vvPair
 variable "project_name"
@@ -235,7 +235,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "20:59:20"
+value "21:19:32"
 )
 (vvPair
 variable "unit"
@@ -243,7 +243,7 @@ value "Pipeline"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "sgrand2"
 )
 (vvPair
 variable "version"
@@ -326,8 +326,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-12600,27000,-11700"
-st "clk           : std_logic
-"
+st "clk           : std_logic"
 )
 )
 *3 (PortIoOut
@@ -389,8 +388,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-10800,27000,-9900"
-st "D_ADDRESS     : LC3b_word
-"
+st "D_ADDRESS     : LC3b_word"
 )
 )
 *5 (PortIoOut
@@ -543,8 +541,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-9000,27000,-8100"
-st "D_MREAD_L     : std_logic
-"
+st "D_MREAD_L     : std_logic"
 )
 )
 *9 (PortIoIn
@@ -607,8 +604,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-15300,27000,-14400"
-st "D_MRESP_H     : std_logic
-"
+st "D_MRESP_H     : std_logic"
 )
 )
 *11 (PortIoOut
@@ -670,8 +666,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-8100,27000,-7200"
-st "D_MWRITE_L    : std_logic
-"
+st "D_MWRITE_L    : std_logic"
 )
 )
 *13 (PortIoOut
@@ -733,8 +728,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-7200,27000,-6300"
-st "I_ADDRESS     : LC3b_word
-"
+st "I_ADDRESS     : LC3b_word"
 )
 )
 *15 (PortIoIn
@@ -842,8 +836,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-6300,27000,-5400"
-st "I_MREAD_L     : std_logic
-"
+st "I_MREAD_L     : std_logic"
 )
 )
 *18 (PortIoIn
@@ -906,8 +899,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-13500,27000,-12600"
-st "I_MRESP_H     : std_logic
-"
+st "I_MRESP_H     : std_logic"
 )
 )
 *20 (Grouping
@@ -1612,8 +1604,9 @@ vasetType 1
 fg "49152,49152,49152"
 )
 xt "52250,22250,53750,23750"
-iconName "UnknownFile.png"
-iconMaskName "UnknownFile.msk"
+iconName "BlockDiagram.png"
+iconMaskName "BlockDiagram.msk"
+ftype 1
 )
 viewiconposition 0
 gi *50 (BdGenericInterface
@@ -1834,8 +1827,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-11700,27000,-10800"
-st "reset_l       : std_logic
-"
+st "reset_l       : std_logic"
 )
 )
 *60 (Net
@@ -1852,8 +1844,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-4500,34500,-3600"
-st "SIGNAL ContWordToEx  : LC3b_Control_Word
-"
+st "SIGNAL ContWordToEx  : LC3b_Control_Word"
 )
 )
 *61 (Net
@@ -1870,8 +1861,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-3600,34500,-2700"
-st "SIGNAL ContWordToMem : LC3b_Control_Word
-"
+st "SIGNAL ContWordToMem : LC3b_Control_Word"
 )
 )
 *62 (Net
@@ -1888,8 +1878,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-1800,30500,-900"
-st "SIGNAL InstrToDec    : LC3b_word
-"
+st "SIGNAL InstrToDec    : LC3b_word"
 )
 )
 *63 (Net
@@ -1906,8 +1895,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-900,30500,0"
-st "SIGNAL PCToDec       : LC3b_word
-"
+st "SIGNAL PCToDec       : LC3b_word"
 )
 )
 *64 (Net
@@ -1924,8 +1912,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-2700,34500,-1800"
-st "SIGNAL ContWordToWB  : LC3B_Control_Word
-"
+st "SIGNAL ContWordToWB  : LC3B_Control_Word"
 )
 )
 *65 (Net
@@ -1942,8 +1929,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-16200,27000,-15300"
-st "D_DATAOUT     : LC3b_word
-"
+st "D_DATAOUT     : LC3b_word"
 )
 )
 *66 (Net
@@ -1960,8 +1946,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-14400,27000,-13500"
-st "I_DATAOUT     : LC3b_word
-"
+st "I_DATAOUT     : LC3b_word"
 )
 )
 *67 (Net
@@ -1978,8 +1963,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-9900,27000,-9000"
-st "D_DATAIN      : LC3b_word
-"
+st "D_DATAIN      : LC3b_word"
 )
 )
 *68 (Net
@@ -1996,8 +1980,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,0,30500,900"
-st "SIGNAL imm4          : LC3B_Word
-"
+st "SIGNAL imm4          : LC3B_Word"
 )
 )
 *69 (Net
@@ -2014,8 +1997,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,900,30500,1800"
-st "SIGNAL imm5          : LC3B_Word
-"
+st "SIGNAL imm5          : LC3B_Word"
 )
 )
 *70 (Net
@@ -2032,8 +2014,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,1800,30500,2700"
-st "SIGNAL off6          : LC3B_Word
-"
+st "SIGNAL off6          : LC3B_Word"
 )
 )
 *71 (Net
@@ -2050,8 +2031,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,2700,30500,3600"
-st "SIGNAL off6ns        : LC3B_word
-"
+st "SIGNAL off6ns        : LC3B_word"
 )
 )
 *72 (Wire
@@ -2961,13 +2941,13 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,25,1608,1182"
-viewArea "-30049,-13680,82784,68454"
+windowSize "-3,25,1597,1178"
+viewArea "-30000,-13700,82914,69120"
 cachedDiagramExtent "-15000,-18000,70000,27350"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,-51000"
 active 1
-lastUid 1131,0
+lastUid 1199,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
