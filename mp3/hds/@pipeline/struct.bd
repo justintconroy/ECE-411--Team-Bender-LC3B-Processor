@@ -75,23 +75,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hdl"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.info"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.user"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -107,11 +107,11 @@ value "%(unit)_config"
 )
 (vvPair
 variable "d"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline"
 )
 (vvPair
 variable "d_logical"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline"
 )
 (vvPair
 variable "date"
@@ -155,7 +155,7 @@ value "stdt"
 )
 (vvPair
 variable "host"
-value "eelnx35.ews.illinois.edu"
+value "eelnx36.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -191,11 +191,11 @@ value "October"
 )
 (vvPair
 variable "p"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/@pipeline/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/engr/jconroy2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline/struct.bd"
+value "/home/engr/sgrand2/ece411/ECE-411--Team-Bender-LC3B-Processor/mp3/hds/Pipeline/struct.bd"
 )
 (vvPair
 variable "project_name"
@@ -235,7 +235,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "22:28:39"
+value "21:39:15"
 )
 (vvPair
 variable "unit"
@@ -243,7 +243,7 @@ value "Pipeline"
 )
 (vvPair
 variable "user"
-value "jconroy2"
+value "sgrand2"
 )
 (vvPair
 variable "version"
@@ -932,7 +932,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "33200,-6950,46700,-6050"
+xt "33200,-6950,46200,-6050"
 st "
 by %user on %dd %month %year
 "
@@ -1612,8 +1612,9 @@ vasetType 1
 fg "49152,49152,49152"
 )
 xt "52250,22250,53750,23750"
-iconName "UnknownFile.png"
-iconMaskName "UnknownFile.msk"
+iconName "BlockDiagram.png"
+iconMaskName "BlockDiagram.msk"
+ftype 1
 )
 viewiconposition 0
 gi *50 (BdGenericInterface
@@ -3478,13 +3479,13 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,25,1608,1182"
-viewArea "-30049,-13680,82784,68454"
+windowSize "-3,25,1597,1178"
+viewArea "19904,-4945,77716,37459"
 cachedDiagramExtent "-15000,-18000,70000,27350"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,-51000"
 active 1
-lastUid 1599,0
+lastUid 1209,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -4529,7 +4530,7 @@ tm "BdDeclarativeTextMgr"
 )
 commonDM (CommonDM
 ldm (LogicalDM
-suid 54,0
+suid 48,0
 usingSuid 1
 emptyRow *143 (LEmptyRow
 )
