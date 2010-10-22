@@ -235,7 +235,7 @@ value "<TBD>"
 )
 (vvPair
 variable "time"
-value "21:19:32"
+value "22:07:20"
 )
 (vvPair
 variable "unit"
@@ -326,7 +326,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-12600,27000,-11700"
-st "clk           : std_logic"
+st "clk           : std_logic
+"
 )
 )
 *3 (PortIoOut
@@ -388,7 +389,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-10800,27000,-9900"
-st "D_ADDRESS     : LC3b_word"
+st "D_ADDRESS     : LC3b_word
+"
 )
 )
 *5 (PortIoOut
@@ -541,7 +543,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-9000,27000,-8100"
-st "D_MREAD_L     : std_logic"
+st "D_MREAD_L     : std_logic
+"
 )
 )
 *9 (PortIoIn
@@ -604,7 +607,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-15300,27000,-14400"
-st "D_MRESP_H     : std_logic"
+st "D_MRESP_H     : std_logic
+"
 )
 )
 *11 (PortIoOut
@@ -666,7 +670,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-8100,27000,-7200"
-st "D_MWRITE_L    : std_logic"
+st "D_MWRITE_L    : std_logic
+"
 )
 )
 *13 (PortIoOut
@@ -728,7 +733,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-7200,27000,-6300"
-st "I_ADDRESS     : LC3b_word"
+st "I_ADDRESS     : LC3b_word
+"
 )
 )
 *15 (PortIoIn
@@ -836,7 +842,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-6300,27000,-5400"
-st "I_MREAD_L     : std_logic"
+st "I_MREAD_L     : std_logic
+"
 )
 )
 *18 (PortIoIn
@@ -899,7 +906,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-13500,27000,-12600"
-st "I_MRESP_H     : std_logic"
+st "I_MRESP_H     : std_logic
+"
 )
 )
 *20 (Grouping
@@ -924,7 +932,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "33200,-6950,46700,-6050"
+xt "33200,-6950,46200,-6050"
 st "
 by %user on %dd %month %year
 "
@@ -1827,7 +1835,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-11700,27000,-10800"
-st "reset_l       : std_logic"
+st "reset_l       : std_logic
+"
 )
 )
 *60 (Net
@@ -1844,7 +1853,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-4500,34500,-3600"
-st "SIGNAL ContWordToEx  : LC3b_Control_Word"
+st "SIGNAL ContWordToEx  : LC3b_Control_Word
+"
 )
 )
 *61 (Net
@@ -1861,7 +1871,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-3600,34500,-2700"
-st "SIGNAL ContWordToMem : LC3b_Control_Word"
+st "SIGNAL ContWordToMem : LC3b_Control_Word
+"
 )
 )
 *62 (Net
@@ -1878,7 +1889,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-1800,30500,-900"
-st "SIGNAL InstrToDec    : LC3b_word"
+st "SIGNAL InstrToDec    : LC3b_word
+"
 )
 )
 *63 (Net
@@ -1895,7 +1907,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-900,30500,0"
-st "SIGNAL PCToDec       : LC3b_word"
+st "SIGNAL PCToDec       : LC3b_word
+"
 )
 )
 *64 (Net
@@ -1912,7 +1925,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-2700,34500,-1800"
-st "SIGNAL ContWordToWB  : LC3B_Control_Word"
+st "SIGNAL ContWordToWB  : LC3B_Control_Word
+"
 )
 )
 *65 (Net
@@ -1929,7 +1943,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-16200,27000,-15300"
-st "D_DATAOUT     : LC3b_word"
+st "D_DATAOUT     : LC3b_word
+"
 )
 )
 *66 (Net
@@ -1946,7 +1961,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-14400,27000,-13500"
-st "I_DATAOUT     : LC3b_word"
+st "I_DATAOUT     : LC3b_word
+"
 )
 )
 *67 (Net
@@ -1963,7 +1979,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,-9900,27000,-9000"
-st "D_DATAIN      : LC3b_word"
+st "D_DATAIN      : LC3b_word
+"
 )
 )
 *68 (Net
@@ -1980,7 +1997,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,0,30500,900"
-st "SIGNAL imm4          : LC3B_Word"
+st "SIGNAL imm4          : LC3B_Word
+"
 )
 )
 *69 (Net
@@ -1997,7 +2015,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,900,30500,1800"
-st "SIGNAL imm5          : LC3B_Word"
+st "SIGNAL imm5          : LC3B_Word
+"
 )
 )
 *70 (Net
@@ -2014,7 +2033,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,1800,30500,2700"
-st "SIGNAL off6          : LC3B_Word"
+st "SIGNAL off6          : LC3B_Word
+"
 )
 )
 *71 (Net
@@ -2031,7 +2051,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14000,2700,30500,3600"
-st "SIGNAL off6ns        : LC3B_word"
+st "SIGNAL off6ns        : LC3B_word
+"
 )
 )
 *72 (Wire
@@ -2647,7 +2668,6 @@ shape (OrthoPolyLine
 uid 963,0
 va (VaSet
 vasetType 3
-lineWidth 2
 )
 xt "46000,6000,52000,6000"
 pts [
@@ -2659,7 +2679,6 @@ start &41
 end &46
 sat 2
 eat 1
-sty 1
 st 0
 sf 1
 si 0
@@ -2942,12 +2961,12 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-3,25,1597,1178"
-viewArea "-30000,-13700,82914,69120"
+viewArea "19900,-4900,77734,37520"
 cachedDiagramExtent "-15000,-18000,70000,27350"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,-51000"
 active 1
-lastUid 1199,0
+lastUid 1285,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -3992,7 +4011,7 @@ tm "BdDeclarativeTextMgr"
 )
 commonDM (CommonDM
 ldm (LogicalDM
-suid 47,0
+suid 48,0
 usingSuid 1
 emptyRow *125 (LEmptyRow
 )
