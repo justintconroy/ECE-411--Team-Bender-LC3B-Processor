@@ -13,6 +13,7 @@ USE ieee.NUMERIC_STD.all;
 
 LIBRARY ece411;
 USE ece411.LC3b_types.all;
+USE ieee.std_logic_arith.all;
 
 ENTITY AddBr IS
    PORT( 
